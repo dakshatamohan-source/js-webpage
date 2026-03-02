@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: poppins;
+            cursor: pointer;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url("1192277.jpg");
+            background-position:center ;
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+        form{
+            width: 350px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255,255,255,0.6);
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: black 10px;
+            font-weight: bold;
+        }
+        h2{
+            color: white;
+            text-shadow:white 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <script src="java.js"></script>
+<form onsubmit="getdata(event)">
+    <h2 style="text-align: center;">LOGIN</h2><br>
+    Employee ID: <input type="text" id="emp_id" placeholder="Employee ID"><br>
+    Password: <input type="text" id="pas" placeholder="Password"><br>
+    <a href="#fg" style="text-align: right;">Forget password</a><br>
+    <button type="submit">LOGIN</button>
+</form>
+</body>
+</html>
