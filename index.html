@@ -12,7 +12,7 @@
             padding:0;
             box-sizing: border-box;
             font-family: poppins;
-            cursor: pointer;
+            
         }
         body{
             height: 100vh;
@@ -21,38 +21,77 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-image: url("1192277.jpg");
+            background-image: url("123.jpg");
             background-position:center ;
             background-repeat: no-repeat;
             background-size: cover; 
         }
-        form{
-            width: 350px;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            background-color: rgba(255,255,255,0.8);
-            padding: 15px;
-            border-radius: 15px;
-            box-shadow: black 10px;
-            font-weight: bold;
-        }
+        
         h2{
             color: black;
             text-shadow:white 10px;
         }
+       
+.login-box{
+    width:350px;
+    padding:40px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+.login-box input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.1);
+    width: 100%;
+}
+
+.button-con{
+    display: flex;
+    justify-content: center;
+}
+.login-box button{
+   border: 2pxblack;
+   cursor: pointer;
+}
+.login-box{
+    transition: transform 0.3s;
+}
+
+.login-box:hover{
+    transform: scale(1.05);
+}
+.login-box input{
+    transition: transform 0.3s;
+}
+
+.login-box input:hover{
+    transform: scale(1.05);
+}
+button{
+    transition: transform 0.3s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
 
     </style>
 </head>
 <body>
     <script src="java.js"></script>
+<div class="login-box">
 <form onsubmit="getdata(event)">
     <h2 style="text-align: center;">LOGIN</h2><br>
     Employee ID: <input type="text" id="emp_id" placeholder="Employee ID"><br>
     Password: <input type="text" id="pas" placeholder="Password"><br>
-    <a href="#fg" style="text-align: right;">Forget password</a><br>
-    <button type="submit">LOGIN</button>
+   <br>
+   <div class="button-con">
+    <button type="submit" style="padding: 5px;" >LOGIN</button></div>
 </form>
+</div>
 </body>
-
 </html>
