@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Verification</title>
-    <style>
-        body{
-            background-image: url("p1.jpg");
-        }
-    </style><!DOCTYPE html>
-<html lang="en">
-<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Verification</title>
@@ -21,6 +11,7 @@
 <style>
     *{
      font-family: 'Poppins', sans-serif;
+     margin: 0;
     }
     body{
         display:flex;
@@ -42,6 +33,17 @@
           padding:30px;
         border-radius:15px;
 }
+.verification{
+    margin-top: 25px;
+        background-color:rgba(255,255,255,0.9);
+          padding:30px;
+        border-radius:15px;
+}
+.experience{
+    margin-top: 25px;
+        background-color:rgba(255,255,255,0.9);
+          padding:30px;
+        border-radius:15px;}
     table{
         width:100%;
 }
@@ -66,7 +68,8 @@ form input {
     <hr><br>
 
     <div class="personal">
-
+        <h1 style="font-weight: lighter;">PERSONAL DETAILS</h1>
+        <hr>
         <form>
 
             <table>
@@ -114,23 +117,121 @@ form input {
                         <input type="text" placeholder="Role" id="role">
                     </td>
                 </tr>
-
             </table>
+            </form><br><br><br>
+        </div>
+    <div class="experience">
+    <h1 style="font-weight: lighter;">PERSONAL EXPERIENCE</h1>
+    <hr>
+    <form>
+        <table>
+            <tr>
+                <td>Previous Company:</td>
+                <td>
+                    <input type="text" placeholder="Company Name" id="prev_company">
+                </td>
+            </tr>
 
-        </form>
+            <tr>
+                <td>Job Title:</td>
+                <td>
+                    <input type="text" placeholder="Job Title" id="job_title">
+                </td>
+            </tr>
 
-    </div>
+            <tr>
+                <td>Years of Experience:</td>
+                <td>
+                    <input type="number" placeholder="Years" id="years_exp" min="0">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Skills:</td>
+                <td>
+                    <input type="text" placeholder="Key Skills" id="skills">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Certifications:</td>
+                <td>
+                    <input type="text" placeholder="Certifications" id="certifications">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Educational Qualification:</td>
+                <td>
+                    <input type="text" placeholder="Highest Degree" id="education">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Achievements:</td>
+                <td>
+                    <textarea placeholder="Notable Achievements" id="achievements"></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div class="verification">
+    <h1 style="font-weight: lighter;">VERIFICATION</h1>
+    <hr>
+    <form>
+        <table>
+            <tr>
+                <td>Government ID Type:</td>
+                <td>
+                    <select id="gov_id_type">
+                        <option value="">Select ID Type</option>
+                        <option value="passport">Passport</option>
+                        <option value="aadhaar">Aadhaar</option>
+                        <option value="driver_license">Driver’s License</option>
+                        <option value="pan_card">PAN Card</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Government ID Number:</td>
+                <td>
+                    <input type="text" placeholder="Enter ID Number" id="gov_id_number">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Upload Photo:</td>
+                <td>
+                    <input type="file" id="photo_upload" accept="image/*">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Upload Signature:</td>
+                <td>
+                    <input type="file" id="signature_upload" accept="image/*">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email Verification:</td>
+                <td>
+                    <input type="email" placeholder="Official Email" id="email_verify">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone Verification:</td>
+                <td>
+                    <input type="tel" placeholder="Phone Number" id="phone_verify">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
 
 </div>
     </body>
 </html>
-</head>
-<body>
-    <script>
-
-    </script>
-    
-</body>
-
-</html>
-
