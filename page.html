@@ -33,7 +33,8 @@
           padding:30px;
         border-radius:15px;
 }
-.verification{
+.verification
+{
     margin-top: 25px;
         background-color:rgba(255,255,255,0.9);
           padding:30px;
@@ -58,6 +59,46 @@
 }
 form input {
     width:70% ;
+}
+.personal{
+    transition: transform 0.3s;
+}
+
+.personal:hover{
+    transform: scale(1.05);
+}
+.experience{
+    transition: transform 0.3s;
+}
+
+.experience:hover{
+    transform: scale(1.05);
+}
+.verification{
+    transition: transform 0.3s;
+}
+
+.verification:hover{
+    transform: scale(1.05);
+}
+.container input{
+    transition: transform 0.3s;
+    cursor: crosshair;
+}
+.container input:hover{
+    transform: scale(1.05);
+}
+h2{
+    transition: transform 0.3s;
+}
+h2:hover{
+    transform: scale(1.3);
+}
+button{
+    transition: transform 0.3;
+}
+button:hover{
+    transform: scale(1.05);
 }
 </style>
 </head>
@@ -228,10 +269,13 @@ form input {
                     <input type="tel" placeholder="Phone Number" id="phone_verify">
                 </td>
             </tr>
+           
         </table>
     </form>
 </div>
-
+<div class="bt" style="margin-top: 15px;">
+     <button type="button" style="text-align: center;" onclick="">Submit</button>
+</div>
 </div>
     </body>
 </html>
