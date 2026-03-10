@@ -79,23 +79,38 @@ button:hover{
     transform: scale(1.1);
 }
 button{
-    border-radius:50px;
+    border-radius: 50px;
 }
 
     </style>
 </head>
 <body>
-    <script src="java.js"></script>
+    <script>
+function login(){
+
+let empId = document.getElementById("emp_id").value;
+let password = document.getElementById("pas").value;
+
+if(empId === "team_goo" && password === "1234"){
+    
+    window.location.href = "page.html";
+
+}
+else{
+    alert("Invalid Employee ID or Password");
+}
+
+}
+</script>
 <div class="login-box">
-<form onsubmit="getdata(event)">
+<form>
     <h2 style="text-align: center;">LOGIN</h2><br>
     Employee ID: <input type="text" id="emp_id" placeholder="Employee ID"><br>
-    Password: <input type="text" id="pas" placeholder="Password"><br>
+    Password: <input type="password" id="pas" placeholder="Password"><br>
    <br>
    <div class="button-con">
-    <button type="submit" style="padding: 5px;" >LOGIN</button></div>
+    <button type="button" style="padding: 5px;" onclick="login()">LOGIN</button></div>
 </form>
 </div>
 </body>
-</html>
-
+</html> 
