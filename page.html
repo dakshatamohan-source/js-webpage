@@ -1,281 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Verification</title>
-<link rel="icon" href="12-removebg-preview.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-<style>
-    *{
-     font-family: 'Poppins', sans-serif;
-     margin: 0;
-    }
-    body{
-        display:flex;
-        justify-content:center;
-      margin:0;
-        background-image:url("p1.jpg");
-        background-position:center;
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-attachment:fixed;
-}
-    .container{
-        margin:40px;
-        width:70%;
-        text-align:center;
-}
-.personal{
-        background-color:rgba(255,255,255,0.9);
-          padding:30px;
-        border-radius:15px;
-}
-.verification
-{
-    margin-top: 25px;
-        background-color:rgba(255,255,255,0.9);
-          padding:30px;
-        border-radius:15px;
-}
-.experience{
-    margin-top: 25px;
-        background-color:rgba(255,255,255,0.9);
-          padding:30px;
-        border-radius:15px;}
-    table{
-        width:100%;
-}
-    td{
-        padding:10px;
-        color:black;
-}
-     input{
-    padding:8px;
-    border-radius:5px;
-    border:1px solid gray;
-}
-form input {
-    width:70% ;
-}
-.personal{
-    transition: transform 0.3s;
-}
-
-.personal:hover{
-    transform: scale(1.05);
-}
-.experience{
-    transition: transform 0.3s;
-}
-
-.experience:hover{
-    transform: scale(1.05);
-}
-.verification{
-    transition: transform 0.3s;
-}
-
-.verification:hover{
-    transform: scale(1.05);
-}
-.container input{
-    transition: transform 0.3s;
-    cursor: crosshair;
-}
-.container input:hover{
-    transform: scale(1.05);
-}
-h2{
-    transition: transform 0.3s;
-}
-h2:hover{
-    transform: scale(1.3);
-}
-button{
-    transition: transform 0.3;
-}
-button:hover{
-    transform: scale(1.05);
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification</title>
+    <link rel="icon" href="12-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family:'Poppins',sans-serif;
+            margin:0;
+        }
+        body{
+            display:flex;
+            justify-content:center;
+            background-image:url("p1.jpg");
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+        }
+        .container{
+            margin:40px;
+            width:70%;
+            text-align:center;
+        }
+        .personal,.experience,.verification{
+            background-color:rgba(255,255,255,0.9);
+            padding:30px;
+            border-radius:15px;
+            transition:transform 0.3s;
+        }
+        .experience,.verification{
+            margin-top:25px;
+        }
+        .personal:hover,.experience:hover,.verification:hover{
+            transform:scale(1.05);
+        }
+        table{
+            width:100%;
+        }
+        td{
+            padding:10px;
+            color:black;
+        }
+        input {
+            padding:8px;
+            border-radius:5px;
+            border:1px solid gray;
+        }
+        form input{
+            width:70%;
+        }
+        .container input{
+            transition:transform 0.3s;
+            cursor:crosshair;
+        }
+        .container input:hover{
+            transform:scale(1.05);
+        }
+        h2{
+            transition:transform 0.3s;
+        }
+        h2:hover{
+            transform:scale(1.3);
+        }
+        button{
+            transition:transform 0.3s;
+            padding:10px 25px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+        button:hover{
+            transform:scale(1.05);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-
-    <h2 style="font-weight: lighter; color: white;">Employee Verification</h2>
-    <hr><br>
-
-    <div class="personal">
-        <h1 style="font-weight: lighter;">PERSONAL DETAILS</h1>
-        <hr>
-        <form>
-
-            <table>
-
-                <tr>
-                    <td>Name:</td>
-                    <td>
-                        <input type="text" placeholder="Full Name" id="name">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Father Name:</td>
-                    <td>
-                        <input type="text" placeholder="Father Name" id="f_name">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Date of Birth:</td>
-                    <td>
-                        <input type="date" id="dob">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Gender:</td>
-                    <td>
-                        <input type="radio" name="gender" value="male"> Male
-                        <input type="radio" name="gender" value="female">Female
-                        <input type="radio" name="gender" value="other"> Other
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Employee ID:</td>
-                    <td>
-                        <input type="text" placeholder="Employee ID" id="emp_id">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Role:</td>
-                    <td>
-                        <input type="text" placeholder="Role" id="role">
-                    </td>
-                </tr>
-            </table>
-            </form><br><br><br>
-        </div>
-    <div class="experience">
-    <h1 style="font-weight: lighter;">PERSONAL EXPERIENCE</h1>
-    <hr>
-    <form>
-        <table>
-            <tr>
-                <td>Previous Company:</td>
-                <td>
-                    <input type="text" placeholder="Company Name" id="prev_company">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Job Title:</td>
-                <td>
-                    <input type="text" placeholder="Job Title" id="job_title">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Years of Experience:</td>
-                <td>
-                    <input type="number" placeholder="Years" id="years_exp" min="0">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Skills:</td>
-                <td>
-                    <input type="text" placeholder="Key Skills" id="skills">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Certifications:</td>
-                <td>
-                    <input type="text" placeholder="Certifications" id="certifications">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Educational Qualification:</td>
-                <td>
-                    <input type="text" placeholder="Highest Degree" id="education">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Achievements:</td>
-                <td>
-                    <textarea placeholder="Notable Achievements" id="achievements"></textarea>
-                </td>
-            </tr>
-        </table>
-    </form>
-</div>
-<div class="verification">
-    <h1 style="font-weight: lighter;">VERIFICATION</h1>
-    <hr>
-    <form>
-        <table>
-            <tr>
-                <td>Government ID Type:</td>
-                <td>
-                    <select id="gov_id_type">
-                        <option value="">Select ID Type</option>
-                        <option value="passport">Passport</option>
-                        <option value="aadhaar">Aadhaar</option>
-                        <option value="driver_license">Driver’s License</option>
-                        <option value="pan_card">PAN Card</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <td>Government ID Number:</td>
-                <td>
-                    <input type="text" placeholder="Enter ID Number" id="gov_id_number">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Upload Photo:</td>
-                <td>
-                    <input type="file" id="photo_upload" accept="image/*">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Upload Signature:</td>
-                <td>
-                    <input type="file" id="signature_upload" accept="image/*">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Email Verification:</td>
-                <td>
-                    <input type="email" placeholder="Official Email" id="email_verify">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Phone Verification:</td>
-                <td>
-                    <input type="tel" placeholder="Phone Number" id="phone_verify">
-                </td>
-            </tr>
-           
-        </table>
-    </form>
-</div>
-<div class="bt" style="margin-top: 15px;">
-     <button type="button" style="text-align: center;" onclick="">Submit</button>
-</div>
-</div>
-    </body>
+        <h2 style="font-weight:lighter;color:white;">Employee Verification</h2>
+        <hr><br>
+        <form onsubmit="submitForm(event)">
+            <div class="personal">
+                <h1 style="font-weight:lighter;">PERSONAL DETAILS</h1>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" placeholder="Full Name" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Father Name:</td>
+                        <td><input type="text" placeholder="Father Name" id="f_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth:</td>
+                        <td><input type="date" id="dob"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" name="gender" value="male"> Male
+                            <input type="radio" name="gender" value="female"> Female
+                            <input type="radio" name="gender" value="other"> Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employee ID:</td>
+                        <td><input type="text" placeholder="Employee ID" id="emp_id" required></td>
+                    </tr>
+                    <tr>
+                        <td>Role:</td>
+                        <td><input type="text" placeholder="Role" id="role" required></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="experience">
+                <h1 style="font-weight:lighter;">PERSONAL EXPERIENCE</h1>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Previous Company:</td>
+                        <td><input type="text" placeholder="Company Name" id="prev_company"></td>
+                    </tr>
+                    <tr>
+                        <td>Job Title:</td>
+                        <td><input type="text" placeholder="Job Title" id="job_title"></td>
+                    </tr>
+                    <tr>
+                        <td>Years of Experience:</td>
+                        <td><input type="number" placeholder="Years" id="years_exp" min="0" max="99"></td>
+                    </tr>
+                    <tr>
+                        <td>Skills:</td>
+                        <td><input type="text" placeholder="Key Skills" id="skills"></td>
+                    </tr>
+                    <tr>
+                        <td>Certifications:</td>
+                        <td><input type="text" placeholder="Certifications" id="certifications"></td>
+                    </tr>
+                    <tr>
+                        <td>Educational Qualification:</td>
+                        <td><input type="text" placeholder="Highest Degree" id="education"></td>
+                    </tr>
+                    <tr>
+                        <td>Achievements:</td>
+                        <td><textarea placeholder="Notable Achievements" id="achievements"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="verification">
+                <h1 style="font-weight:lighter;">VERIFICATION</h1>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Government ID Type:</td>
+                        <td>
+                            <select id="gov_id_type" required>
+                                <option value="">Select ID Type</option>
+                                <option value="passport">Passport</option>
+                                <option value="aadhaar">Aadhaar</option>
+                                <option value="driver_license">Driver’s License</option>
+                                <option value="pan_card">PAN Card</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Government ID Number:</td>
+                        <td><input type="text" placeholder="Enter ID Number" id="gov_id_number" required></td>
+                    </tr>
+                    <tr>
+                        <td>Upload Photo:</td>
+                        <td><input type="file" id="photo_upload" accept="image/*"></td>
+                    </tr>
+                    <tr>
+                        <td>Upload Signature:</td>
+                        <td><input type="file" id="signature_upload" accept="image/*"></td>
+                    </tr>
+                    <tr>
+                        <td>Email Verification:</td>
+                        <td><input type="email" placeholder="Official Email" id="email_verify" required></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Verification:</td>
+                        <td><input type="tel" placeholder="Phone Number" id="phone_verify" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Submit</button></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+    <script>
+        function submitForm(event){
+            event.preventDefault();
+            alert("Form Submitted Successfully");
+            let name = document.getElementById("name").value;
+let father = document.getElementById("f_name").value;
+let dob = document.getElementById("dob").value;
+let empid = document.getElementById("emp_id").value;
+let role = document.getElementById("role").value;
+let company = document.getElementById("prev_company").value;
+let job = document.getElementById("job_title").value;
+let exp = document.getElementById("years_exp").value;
+let skills = document.getElementById("skills").value;
+let cert = document.getElementById("certifications").value;
+let edu = document.getElementById("education").value;
+let achieve = document.getElementById("achievements").value;
+let govtype = document.getElementById("gov_id_type").value;
+let govnum = document.getElementById("gov_id_number").value;
+let email = document.getElementById("email_verify").value;
+let phone = document.getElementById("phone_verify").value;
+             }
+    </script>
+</body>
 </html>
