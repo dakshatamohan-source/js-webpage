@@ -8,7 +8,122 @@
         body{
             background-image: url("1192277.jpg");
         }
-    </style>
+    </style><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verification</title>
+<link rel="icon" href="12-removebg-preview.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    *{
+     font-family: 'Poppins', sans-serif;
+    }
+    body{
+        display:flex;
+        justify-content:center;
+      margin:0;
+        background-image:url("p1.jpg");
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-attachment:fixed;
+}
+    .container{
+        margin:40px;
+        width:70%;
+        text-align:center;
+}
+.personal{
+        background-color:rgba(255,255,255,0.9);
+          padding:30px;
+        border-radius:15px;
+}
+    table{
+        width:100%;
+}
+    td{
+        padding:10px;
+        color:black;
+}
+     input{
+    padding:8px;
+    border-radius:5px;
+    border:1px solid gray;
+}
+form input {
+    width:70% ;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+
+    <h2 style="font-weight: lighter; color: white;">Employee Verification</h2>
+    <hr><br>
+
+    <div class="personal">
+
+        <form>
+
+            <table>
+
+                <tr>
+                    <td>Name:</td>
+                    <td>
+                        <input type="text" placeholder="Full Name" id="name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Father Name:</td>
+                    <td>
+                        <input type="text" placeholder="Father Name" id="f_name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td>
+                        <input type="date" id="dob">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="other"> Other
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Employee ID:</td>
+                    <td>
+                        <input type="text" placeholder="Employee ID" id="emp_id">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Role:</td>
+                    <td>
+                        <input type="text" placeholder="Role" id="role">
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+    </div>
+
+</div>
+    </body>
+</html>
 </head>
 <body>
     <script>
@@ -16,4 +131,5 @@
     </script>
     
 </body>
+
 </html>
